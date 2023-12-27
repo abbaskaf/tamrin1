@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+{% for item in post %}
+    <a href="{% url 'lesson_list' teachers_id=item.id %}"><h1>{{ item.first_name}}-{{ item.last_name }}</h1></a>
+{% endfor %}
+</body>
+</html>

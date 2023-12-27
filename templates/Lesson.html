@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+{% for item in posts %}
+    <a href="{%url 'lesson' lessons=item.name%}"><h1>{{ item.id }}-{{ item.name }}</h1></a>
+
+    
+{% endfor %}
+5433
+</body>
+</html>
